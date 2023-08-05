@@ -9,7 +9,7 @@ $$ \rho = \left({1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{
 
 $$ C_p =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np1} C_{p,np1} + \phi_{np2} \rho_{np2} C_{p,np2}} \over \rho}  $$
 
-$$ kappa_ = ( ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ - ( lambdanp1_ - 1.0 ) * ( kappabf_ - kappanp1_ ) * \phi_{np1} ) / ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp1_ ) * \phi_{np1} ) ) * ( ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ - ( lambdanp2_ - 1.0 ) * ( kappabf_ - kappanp2_ ) * \phi_{np2} ) / ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp2_ ) * \phi_{np2} ) ) * kappabf_ $$
+$$ {\kappa} = ( ( \kappa_{np1} + ( \lambda_{np1} - 1 ) * \kappa_{f} - ( \lambda_{np1} - 1 ) * ( \kappa_{f} - \kappa_{np1} ) * \phi_{np1} ) / ( \kappa_{np1} + ( \lambda_{np1} - 1 ) * \kappa_{f} + ( \kappa_{f} - \kappa_{np1} ) * \phi_{np1} ) ) * ( ( \kappa_{np2} + ( \lambda_{np2} - 1 ) * \kappa_{f} - ( \lambda_{np2} - 1 ) * ( \kappa_{f} - \kappa_{np2} ) * \phi_{np2} ) / ( \kappa_{np2} + ( \lambda_{np2} - 1 ) * \kappa_{f} + ( \kappa_{f} - \kappa_{np2} ) * \phi_{np2} ) ) * \kappa_{f} $$
 
 $$ \mu = {\mu_{f} \over {\left({1 - \phi_{np} }\right)^{2.5}} }$$
 
@@ -17,7 +17,7 @@ $$ \beta =  {{\left({1 - \phi_{np}}\right) \rho_{f} \beta_{f} + \phi_{np1} \rho_
 
 $$ \nu = {\mu \over \rho} $$
 
-$$ \alpha = {\kappa \over {\rho * C_p}} $$
+$$ \alpha = {\kappa \over {\rho C_p}} $$
 
 $$ Pr = {\nu \over \alpha} $$
 
