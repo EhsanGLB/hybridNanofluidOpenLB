@@ -15,7 +15,7 @@ $$ {\mu_{hnf} \over {\mu_{f}} }= {\left({1 - \phi_{np} }\right)^{2.5}} $$
 
 $$ \beta_{hnf} =  {{\left({1 - \phi_{np}}\right) \rho_{f} \beta_{f} + \phi_{np1} \rho_{np1} \beta_{np1} + \phi_{np2} \rho_{np2} \beta_{np2}} \over \rho_{hnf}}  $$
 
-$$ \nu_{hnf} = {\mu \over \rho_{hnf}} $$
+$$ \nu_{hnf} = {\mu_{hnf} \over \rho_{hnf}} $$
 
 $$ \alpha_{hnf} = {\kappa_{hnf} \over {\rho_{hnf} C_{p, hnf}}} $$
 
