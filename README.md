@@ -4,13 +4,21 @@ This is a code for simulation of hybrid nanofluid written based on OpenLB-1.4.
 
 ## Mathematical Relationships
 $$ \phi_{np} = \phi_{np1} + \phi_{np2} $$
+
 $$ \rho = \left{1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{np2} \rho_{np2} $$
+
 $$ C_p =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np1} C_{p,np1} + \phi_{np2} \rho_{np2} C_{p,np2}} \over \rho}  $$
-$$ kappa_ = ( ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ - ( lambdanp1_ - 1.0 ) * ( kappabf_ - kappanp1_ ) * \phi_{np1} ) / ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp1_ ) * \phi_{np1} ) ) * ( ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ - ( lambdanp2_ - 1.0 ) * ( kappabf_ - kappanp2_ ) * \phi_{np2} ) / ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp2_ ) * \phi_{np2} ) ) * kappabf_;
-$$ mu_ = mubf_ / pow( 1.0 - \phi_{np}, 2.5) $$
+
+$$ kappa_ = ( ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ - ( lambdanp1_ - 1.0 ) * ( kappabf_ - kappanp1_ ) * \phi_{np1} ) / ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp1_ ) * \phi_{np1} ) ) * ( ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ - ( lambdanp2_ - 1.0 ) * ( kappabf_ - kappanp2_ ) * \phi_{np2} ) / ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp2_ ) * \phi_{np2} ) ) * kappabf_ $$
+
+$$ \mu = {\mu_{f} \over {\left({1.0 - \phi_{np} }\right)^{2.5}} }$$
+
 $$ beta_ = ((1 - \phi_{np}) * \rho_{f} * betabf_ + \phi_{np1} * \rho_{np1} * betanp1_ + \phi_{np2} * \rho_{np2} * betanp2_)/rho_ $$
+
 $$ nu_ = mu_ / \rho $$
+
 $$ alpha_ = kappa_ / (\rho * C_p) $$
+
 $$ Pr_ = nu_ / alpha_ $$
 
 
