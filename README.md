@@ -9,7 +9,7 @@ $$ \rho = \left({1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{
 
 $$ C_p =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np1} C_{p,np1} + \phi_{np2} \rho_{np2} C_{p,np2}} \over \rho}  $$
 
-$$ {\kappa} = \left(   { \kappa_{np1} + ( \lambda_{np1} - 1 ) * \kappa_{f} - ( \lambda_{np1} - 1 ) * ( \kappa_{f} - \kappa_{np1} ) * \phi_{np1} }    / { \kappa_{np1} + ( \lambda_{np1} - 1 ) * \kappa_{f} + ( \kappa_{f} - \kappa_{np1} ) * \phi_{np1} } \right)
+$$ {\kappa} = \left(   { \kappa_{np1} + ( \lambda_{np1} - 1 ) * \kappa_{f} - ( \lambda_{np1} - 1 ) * ( \kappa_{f} - \kappa_{np1} ) * \phi_{np1} }    / { \kappa_{np1} + ( \lambda_{np1} - 1 ) * \kappa_{f} + ( \kappa_{f} - \kappa_{np1} ) * \phi_{np1} } \right) $$
 
 $$* ( ( \kappa_{np2} + ( \lambda_{np2} - 1 ) * \kappa_{f} - ( \lambda_{np2} - 1 ) * ( \kappa_{f} - \kappa_{np2} ) * \phi_{np2} ) / ( \kappa_{np2} + ( \lambda_{np2} - 1 ) * \kappa_{f} + ( \kappa_{f} - \kappa_{np2} ) * \phi_{np2} ) ) * \kappa_{f} $$
 
