@@ -11,15 +11,15 @@ $$ C_p =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np
 
 $$ kappa_ = ( ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ - ( lambdanp1_ - 1.0 ) * ( kappabf_ - kappanp1_ ) * \phi_{np1} ) / ( kappanp1_ + ( lambdanp1_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp1_ ) * \phi_{np1} ) ) * ( ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ - ( lambdanp2_ - 1.0 ) * ( kappabf_ - kappanp2_ ) * \phi_{np2} ) / ( kappanp2_ + ( lambdanp2_ - 1.0 ) * kappabf_ + ( kappabf_ - kappanp2_ ) * \phi_{np2} ) ) * kappabf_ $$
 
-$$ \mu = {\mu_{f} \over {\left({1.0 - \phi_{np} }\right)^{2.5}} }$$
+$$ \mu = {\mu_{f} \over {\left({1 - \phi_{np} }\right)^{2.5}} }$$
 
-$$ beta_ = ((1 - \phi_{np}) * \rho_{f} * betabf_ + \phi_{np1} * \rho_{np1} * betanp1_ + \phi_{np2} * \rho_{np2} * betanp2_)/rho_ $$
+$$ \beta =  {{\left({1 - \phi_{np}}\right) \rho_{f} \beta_{f} + \phi_{np1} \rho_{np1} \beta_{np1} + \phi_{np2} \rho_{np2} \beta_{np2}} \over \rho}  $$
 
-$$ nu_ = mu_ / \rho $$
+$$ \nu = {\mu \over \rho} $$
 
-$$ alpha_ = kappa_ / (\rho * C_p) $$
+$$ \alpha = {\kappa \over {\rho * C_p}} $$
 
-$$ Pr_ = nu_ / alpha_ $$
+$$ Pr = {\nu \over \alpha} $$
 
 
 
