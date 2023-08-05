@@ -15,6 +15,7 @@ make
 
 
 ## Getting Started
+Change the directory of root in definitions.mk file.
 ```bash
 ./thermalNaturalConvection2D
 ```
