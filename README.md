@@ -5,25 +5,23 @@ This is a code for simulation of hybrid nanofluid written based on OpenLB-1.4.
 ## Mathematical Relationships
 $$ \phi_{np} = \phi_{np1} + \phi_{np2} $$
 
-$$ \rho = \left({1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{np2} \rho_{np2} $$
+$$ \rho_{hnf} = \left({1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{np2} \rho_{np2} $$
 
-$$ C_p =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np1} C_{p,np1} + \phi_{np2} \rho_{np2} C_{p,np2}} \over \rho}  $$
+$$ C_{p, hnf} =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np1} C_{p,np1} + \phi_{np2} \rho_{np2} C_{p,np2}} \over \rho_{hnf}}  $$
 
-$$ {\kappa \over {\kappa_{f}} } = {\left(   { \kappa_{np1} + ( \lambda_{np1} - 1 ) \kappa_{f} - ( \lambda_{np1} - 1 ) ( \kappa_{f} - \kappa_{np1} ) \phi_{np1} } \over { \kappa_{np1} + ( \lambda_{np1} - 1 ) \kappa_{f} + ( \kappa_{f} - \kappa_{np1} ) \phi_{np1} } \right)} {\left(   { \kappa_{np2} + ( \lambda_{np2} - 1 ) \kappa_{f} - ( \lambda_{np2} - 1 ) ( \kappa_{f} - \kappa_{np2} ) \phi_{np2} } \over { \kappa_{np2} + ( \lambda_{np2} - 1 ) \kappa_{f} + ( \kappa_{f} - \kappa_{np2} ) \phi_{np2} } \right)} $$
+$$ {\kappa_{hnf} \over {\kappa_{f}} } = {\left(   { \kappa_{np1} + ( \lambda_{np1} - 1 ) \kappa_{f} - ( \lambda_{np1} - 1 ) ( \kappa_{f} - \kappa_{np1} ) \phi_{np1} } \over { \kappa_{np1} + ( \lambda_{np1} - 1 ) \kappa_{f} + ( \kappa_{f} - \kappa_{np1} ) \phi_{np1} } \right)} {\left(   { \kappa_{np2} + ( \lambda_{np2} - 1 ) \kappa_{f} - ( \lambda_{np2} - 1 ) ( \kappa_{f} - \kappa_{np2} ) \phi_{np2} } \over { \kappa_{np2} + ( \lambda_{np2} - 1 ) \kappa_{f} + ( \kappa_{f} - \kappa_{np2} ) \phi_{np2} } \right)} $$
 
-$$* ( ( \kappa_{np2} + ( \lambda_{np2} - 1 ) * \kappa_{f} - ( \lambda_{np2} - 1 ) * ( \kappa_{f} - \kappa_{np2} ) * \phi_{np2} ) / ( \kappa_{np2} + ( \lambda_{np2} - 1 ) * \kappa_{f} + ( \kappa_{f} - \kappa_{np2} ) * \phi_{np2} ) ) * \kappa_{f} $$
+$$ {\mu_{hnf} \over {\mu_{f}} }= {\left({1 - \phi_{np} }\right)^{2.5}} $$
 
-$$ {\mu \over {\mu_{f}} }= {\left({1 - \phi_{np} }\right)^{2.5}} $$
+$$ \beta_{hnf} =  {{\left({1 - \phi_{np}}\right) \rho_{f} \beta_{f} + \phi_{np1} \rho_{np1} \beta_{np1} + \phi_{np2} \rho_{np2} \beta_{np2}} \over \rho_{hnf}}  $$
 
-$$ \beta =  {{\left({1 - \phi_{np}}\right) \rho_{f} \beta_{f} + \phi_{np1} \rho_{np1} \beta_{np1} + \phi_{np2} \rho_{np2} \beta_{np2}} \over \rho}  $$
+$$ \nu_{hnf} = {\mu \over \rho_{hnf}} $$
 
-$$ \nu = {\mu \over \rho} $$
+$$ \alpha_{hnf} = {\kappa_{hnf} \over {\rho_{hnf} C_{p, hnf}}} $$
 
-$$ \alpha = {\kappa \over {\rho C_p}} $$
+$$ Pr_{hnf} = {\nu_{hnf} \over \alpha_{hnf}} $$
 
-$$ Pr = {\nu \over \alpha} $$
-
-
+Which $\rho$, $C_p$, $\kappa$, $\mu$, $\beta$, $\nu$, and $\alpha$ are density, specific heat capacity, thermal conductivity, dynamic viscosity, thermal expansion coefficient, kinematic viscosity, and thermal diffusivity, respectively. Also, subscription $f$, $np$, and $hnf$ depict fluid, nanoparticle, and hybrid nanofluid, respectively.
 
 
 
