@@ -5,7 +5,7 @@ This is a code for simulation of hybrid nanofluid written based on OpenLB-1.4.
 ## Mathematical Relationships
 $$ \phi_{np} = \phi_{np1} + \phi_{np2} $$
 
-$$ \rho = \left{1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{np2} \rho_{np2} $$
+$$ \rho = \left({1 - \phi_{np}}\right) \rho_{f} + \phi_{np1} \rho_{np1} + \phi_{np2} \rho_{np2} $$
 
 $$ C_p =  {{\left({1 - \phi_{np}}\right) \rho_{f} C_{p, f} + \phi_{np1} \rho_{np1} C_{p,np1} + \phi_{np2} \rho_{np2} C_{p,np2}} \over \rho}  $$
 
